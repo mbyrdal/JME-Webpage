@@ -1,14 +1,62 @@
-﻿body {
-    font-family: Courier, monospace;
-    text-align: center;
-}
-
-#mypar {
-    text-align: center;
+#s-par {
     color: red;
+    text-align: center;
 }
 
-#example1 {
+#spin-cats {
     width: 250px;
     height: 200px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.tabs {
+    border: 1px solid #CCC;
+    display: flex;
+}
+
+.tabs__sidebar {
+    width: 125px;
+    flex-shrink: 0;
+    background: #CCC;
+}
+
+.tabs__button {
+    display: block;
+    padding: 10px;
+    background: #EEE;
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.tabs__button:active {
+    background-color: #DDD;
+}
+
+.tabs__button:not(:last-of-type) {
+    border-bottom: 1px solid #CCC;
+}
+
+.tabs__button--active {
+    font-weight: bold;
+    border-right: 2px solid #009879;
+    background: #DDD;
+}
+
+.tabs__content {
+    padding: 15px;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.tabs__content--active {
+    display: block;
+}
+
+.tabs__content > :first-child {
+    margin-top: 0;
 }

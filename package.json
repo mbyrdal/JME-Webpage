@@ -1,0 +1,23 @@
+{
+  "name": "JME-Webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbyrdal/JME-Webpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbyrdal/JME-Webpage/issues"
+  },
+  "homepage": "https://github.com/mbyrdal/JME-Webpage#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

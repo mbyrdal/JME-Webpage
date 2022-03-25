@@ -1,9 +1,8 @@
-#s-par {
-    color: red;
-    text-align: center;
+body {
+    font-family: Arial;
 }
 
-#spin-cats {
+#spin-cats, #eyes-looking {
     width: 250px;
     height: 200px;
     padding: 5px;
@@ -12,51 +11,30 @@
     display: block;
 }
 
-.tabs {
-    border: 1px solid #CCC;
-    display: flex;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.tabs__sidebar {
-    width: 125px;
-    flex-shrink: 0;
-    background: #CCC;
+li {
+    float: left;
 }
 
-.tabs__button {
+li a {
     display: block;
-    padding: 10px;
-    background: #EEE;
-    border: none;
-    width: 100%;
-    outline: none;
-    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.tabs__button:active {
-    background-color: #DDD;
+li a:hover:not(.active) {
+    background-color: #111;
 }
 
-.tabs__button:not(:last-of-type) {
-    border-bottom: 1px solid #CCC;
-}
-
-.tabs__button--active {
-    font-weight: bold;
-    border-right: 2px solid #009879;
-    background: #DDD;
-}
-
-.tabs__content {
-    padding: 15px;
-    font-size: 0.8rem;
-    display: none;
-}
-
-.tabs__content--active {
-    display: block;
-}
-
-.tabs__content > :first-child {
-    margin-top: 0;
+.active {
+    background-color: #04AA6D;
 }

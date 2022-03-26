@@ -1,7 +1,55 @@
 body {
-    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: x-large;
 }
 
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    transition: all 0.2s ease 0s;
+}
+
+.navbar-links li a:hover {
+    color: gray;
+}
+
+.navbar-links li a.active {
+    color: gray;
+}
+
+/* GIFS */
 #spin-cats, #eyes-looking {
     width: 250px;
     height: 200px;
@@ -11,13 +59,7 @@ body {
     display: block;
 }
 
-#contactinfo {
-    list-style-type: square;
-}
-
-
-
-
+/* ARCHIVE GALLERY */
 
 div.gallery {
     border: 1px solid #ccc;
@@ -39,6 +81,8 @@ div.desc {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .responsive {
@@ -66,6 +110,7 @@ div.desc {
     clear: both;
 }
 
+/* CONTACT FORM */
 
 input[type=text], textarea {
     width: 100%;
@@ -79,7 +124,7 @@ input[type=text], textarea {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #111;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -88,39 +133,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #04AA6D;
 }
 
 .contactContainer {
     border-radius: 5px;
     background-color: #F2F2F2;
     padding: 20px;
-}
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar li a:hover:not(.navbar_active) {
-    background-color: #111;
-}
-
-.navbar_active {
-    background-color: #04AA6D;
 }

@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/styling.css" rel="stylesheet">
+    <link href="../css/styling_all.css" rel="stylesheet">
     <title>Kontakt</title>
 </head>
 <body>
-    <h1 align="center">J/M Ejendomsinvest ApS</h1>
-    
-    <!-- Navigation bar -->
-    <ul class="navbar">
-        <li><a href="/">Forside</a></li>
-        <li><a href="/html/archive.html">Arkiv</a></li>
-        <li><a href="/html/about.html">Om os</a></li>
-        <li><a class="navbar_active" href="/html/contact.html">Kontakt</a></li>
-    </ul>
+    <nav class="navbar">
+        <div class="logo">JM Ejendomsinvest &#8962;</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/">Forside</a></li>
+                <li><a href="/html/archive.html">Arkiv</a></li>
+                <li><a href="/html/about.html">Om os</a></li>
+                <li><a class="active" href="/html/contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
     
     <h2>Kontakt</h2>
     <p>Udfyldningsformular her...</p>
@@ -34,9 +36,10 @@
 
             <label for="subject">Besked</label>
             <textarea id="subject" name="subject" placeholder="Skriv en besked..." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
         </form>
     </div>
-
 
 </body>
 </html>

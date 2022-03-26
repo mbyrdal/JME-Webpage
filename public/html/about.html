@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/styling.css" rel="stylesheet">
+    <link href="/css/about_us.css" rel="stylesheet">
     <title>Om</title>
 </head>
 <body>
-    <h1 align="center">J/M Ejendomsinvest ApS</h1>
+    <nav class="navbar">
+        <div class="logo">JM Ejendomsinvest &#8962;</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/">Forside</a></li>
+                <li><a href="/html/archive.html">Arkiv</a></li>
+                <li><a class="active" href="/html/about.html">Om os</a></li>
+                <li><a href="/html/contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
     
-    <!-- Navigation bar -->
-    <ul class="navbar">
-        <li><a href="/">Forside</a></li>
-        <li><a href="/html/archive.html">Arkiv</a></li>
-        <li><a class="navbar_active" href="/html/about.html">Om os</a></li>
-        <li><a href="/html/contact.html">Kontakt</a></li>
-    </ul>
-    
-    <h2>Om os</h2>
-    <p>Information om firmaet og personale: </p>
-    <ul id="contactinfo">
-        <li>Jan Christensen</li>
-        <li>Grundlæggelse</li>
-        <li>Beliggenhed</li>
-        <li>Erfaring</li>
-        <li>Andet</li>
-    </ul>
-    
-    <img src="/images/eyes_looking.gif" id="eyes-looking">
+    <div class="about-section">
+        <h2>Om os</h2>
+        <p>Information om firmaet og personale</p>
+        <p>Juster browser-vinduet for at se, at denne side er responsiv.</p>
+    </div>
+
+    <h3 style="text-align:center">Personale</h3>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="../images/random_mountain.jpeg" alt="Jan" style="width:100%">
+                <div class="container">
+                    <h3>Jan Christensen</h3>
+                    <p class="title">CEO og grundlægger</p>
+                    <p>Noget tekst, der beskriver mig ... lorem ipsum ipsum lorem.</p>
+                    <p>janchr2012@gmail.com</p>
+                    <p><button class="button" onclick="window.location='../html/contact.html';">Kontakt</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

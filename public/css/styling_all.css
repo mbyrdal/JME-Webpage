@@ -49,6 +49,10 @@ html {
     color: gray;
 }
 
+.home-section, .archive-section, .contact-section {
+    padding-left: 5px;
+}
+
 /* GIFS */
 #spin-cats, #eyes-looking {
     width: 250px;
@@ -77,12 +81,6 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 .responsive {
